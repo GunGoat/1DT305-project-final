@@ -118,7 +118,7 @@ def alarm_execute():
             time.sleep(1)
             return False
         elif distance < Distance_lower_threshold:
-            print("The alarm was triggered the lower threshold...")
+            print("The alarm was triggered by the lower threshold...")
             post_var("pycom", 3)
             return True
         elif distance > Distance_higher_threshold:
